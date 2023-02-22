@@ -11,6 +11,7 @@ namespace Tests;
 [TestFixture]
 public class DemonstrationTests {
 
+    // Passes
     [Timeout(5000)]
     [Test]
     public async Task UnhandledWeaklyTypedClientResultMethodCalled() {
@@ -39,6 +40,7 @@ public class DemonstrationTests {
         }
     }
 
+    /// Fails with timeout
     [Timeout(5000)]
     [Test]
     public async Task UnhandledWeaklyTypedClientResultMethodWithArgCalled() {
@@ -67,6 +69,7 @@ public class DemonstrationTests {
         }
     }
 
+    // Passes
     [Timeout(5000)]
     [Test]
     public async Task UnhandledStronglyTypedClientResultMethodCalled() {
@@ -96,6 +99,7 @@ public class DemonstrationTests {
         }
     }
 
+    /// Fails with timeout
     [Timeout(5000)]
     [Test]
     public async Task UnhandledStronglyTypedClientResultMethodWithArgCalled() {
